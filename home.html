@@ -2,9 +2,12 @@
 <html>
     <head>
         <meta charset = "utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Cape York location tracker</title>
         <link rel="stylesheet" href="home.css">
         <!----- <script src = "" defer></script> -->
+        <script src = "tab.js" defer></script>
+        
     </head>
 
     <body>
@@ -31,13 +34,33 @@
     <h1>Cape York location tracker.</h1>
 
     <div class="tab">
-        <button class="tabpages" onclick="openLogIn(event, 'guest')"> Guest </button>
-        <button class="tabpages" onclick="openLogIn(event, 'admin')"> Admin </button>
+        <button class="tabpages" onclick="openTab(event, 'guest')" id="defaultOpen"> Guest </button>
+        
+        <button class="tabpages" onclick="openTab(event, 'admin')"> Admin </button>
     </div>
 
     <div id="guest" class="tabcontent">
-        
+        <h3>Guest Login</h3>
+        <p>Phone number:</p>
+        <input type="text">
     </div>
+
+    <div id="admin" class="tabcontent">
+        <h3>Admin Login</h3>
+        <p>Username:</p>
+        <input type="text">
+        <p>Password:</p>
+        <input type="text">
+    </div>
+
+    <div class="map">
+
+    </div>
+
+
+
+
 
     </body>
 </html>
+
