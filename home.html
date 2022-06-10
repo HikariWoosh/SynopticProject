@@ -34,15 +34,16 @@
     <h1>Cape York location tracker.</h1>
 
     <div class="tab">
-        <button class="tabpages" onclick="openTab(event, 'guest')" id="defaultOpen"> Guest </button>
+        <button class="tabpages" onclick="openTab(event, 'guest')" id="defaultOpen"><b> Guest </b> </button>
         
-        <button class="tabpages" onclick="openTab(event, 'admin')"> Admin </button>
+        <button class="tabpages" onclick="openTab(event, 'admin')"> <b>Admin</b> </button>
     </div>
 
     <div id="guest" class="tabcontent">
         <h3>Guest Login</h3>
         <p>Phone number:</p>
-        <input type="text">
+        <input type="text" id="phoneNumber">
+        <button onclick="getNumber(document.getElementById('phoneNumber'))"> Continue </button>
     </div>
 
     <div id="admin" class="tabcontent">
@@ -54,7 +55,7 @@
     </div>
 
     <div class="map">
-
+        
     </div>
 
 
@@ -63,4 +64,3 @@
 
     </body>
 </html>
-
