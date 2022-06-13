@@ -9,9 +9,8 @@ body{
 .tab {
 margin: auto;
 overflow: hidden;
-border: 1px solid red;
-/*background-color: #f1f1f1;*/
-width: 60%;
+background-color: #f1f1f1;
+width: max-content;
 }
 
 /* Style the buttons that are used to open the tab content */
@@ -39,12 +38,13 @@ background-color: #ccc;
 
 /* Style the tab content */
 .tabcontent {
-border: 1px solid red;
+margin:auto;
 font-size: large;
 display: none;
 padding: 6px 12px;
-border: 1px solid #ccc;
 border-top: none;
+width: 60%;
+
 
 }
 
@@ -52,8 +52,16 @@ input{
   font-size: larger;
 }
 
-button.tabcontent{
-  
+.tabcontent button{
+font-size: large;
+background-color: #ccc;
+float: right;
+border: none;
+outline: none;
+cursor: pointer;
+padding: 14px 30px;
+transition: 0.3s;
+
 }
 
 
@@ -138,4 +146,15 @@ button.tabcontent{
   
   .dropdown .dropbuttom:hover{
     background-color: rgb(185, 219, 194);  
+  }
+
+
+  /*--------Footer---------*/
+
+  footer{
+    position: fixed;
+    text-align: center;
+    padding:0.6em;
+    background-color: rgb(241, 235, 235);
+  
   }
