@@ -79,3 +79,40 @@ background-color: rgb(241, 235, 235);
 .dropdown .dropbuttom:hover{
   background-color: rgb(185, 219, 194);  
 }
+
+/* Maps CSS */
+
+#map-canvas {
+  width: 1200px;
+  height: 800px;
+}
+
+#statusMsg {
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+#statusMsg.error {
+  color: #fff;
+  background-color: #c21807;
+  animation: statusMsg 3s ease forwards;
+}
+
+@keyframes statusMsg {
+  0% {
+      opacity: 1;
+      pointer-events: all;
+  }
+  90% {
+      opacity: 1;
+      pointer-events: all;
+  }
+  100% {
+      opacity: 0;
+      pointer-events: none;
+  }
+}
