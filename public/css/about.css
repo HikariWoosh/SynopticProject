@@ -134,21 +134,29 @@ body{
 .AboutUsHeader {
   font-size: 40px;
   font-weight:700;
+  margin-bottom: 3%;
+}
+
+
+.EWBLogo {
+  float:right;
+  width: 250px;
+  
 }
 
 .MemberPosition {
   float:left;
-  margin-bottom: 80px;
+  margin-bottom: 55px;
 }
 
 .MemberHeading {
-  background-color: forestgreen;
+  background-color: #4f4f4f;
   color: white;
   padding: 10px;
 }
 
 .MemberText {
-  width: 70%;
+  width: 100%;
   word-wrap: break-word;
   font-size: 19px;
   font-weight: 700;
@@ -170,5 +178,11 @@ body{
 }
 
 
-
-
+footer{
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  padding:0.6em;
+  background-color: rgb(241, 235, 235);
+}
