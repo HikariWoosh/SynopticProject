@@ -163,8 +163,9 @@ transition: 0.3s;
 
   footer{
     position: fixed;
+    bottom: 0;
     text-align: center;
+    width: 100%;
     padding:0.6em;
     background-color: rgb(241, 235, 235);
-    bottom:0;
   }
