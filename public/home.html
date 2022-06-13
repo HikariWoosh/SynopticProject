@@ -9,7 +9,6 @@
         <script src = "home.js" defer></script>
         
     </head>
-
     <body>
         
     <div class="navbar">
@@ -30,22 +29,29 @@
         <a href="reports.html">Reports</a>
         <a href="about.html">About Us</a>
     </div>
+    
+    <header>
+        <a href=home.html>
+        <img src="EWB logo.jfif" id="logo">
+        </a>
+        <h1>Cape York location tracker.</h1>
+    </header>
+    
+    
+    <br>
 
-    <h1>Cape York location tracker.</h1>
-
+    
     <div class="tab">
         <button class="tabpages" onclick="openTab(event, 'guest')" id="defaultOpen"><b> Guest </b> </button>
         
         <button class="tabpages" onclick="openTab(event, 'admin')"> <b>Admin</b> </button>
     </div>
-
     <div id="guest" class="tabcontent">
         <h3>Guest Login</h3>
         <p>Phone number:</p>
         <input type="text" id="phoneNumber">
         <button onclick="getNumber(document.getElementById('phoneNumber'))"> Continue </button>
     </div>
-
     <div id="admin" class="tabcontent">
         <h3>Admin Login</h3>
         <p>Username:</p>
@@ -53,18 +59,14 @@
         <p>Password:</p>
         <input type="text">
     </div>
-
     <div class="map">
         
     </div>
-
-
-
-
+    
 
     </body>
 
     <footer>
-        <div>Copyright ©2022<br/></div>
+        <div class= "footer">Copyright ©2022<br/></div>
     </footer>
 </html>
