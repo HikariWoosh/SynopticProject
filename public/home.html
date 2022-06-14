@@ -4,11 +4,12 @@
         <meta charset = "utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Cape York location tracker</title>
-        <link rel="stylesheet" href="css/home.css">
-        <script src = "js/home.js" defer></script>
+        <link rel="stylesheet" href="home.css">
         <script src = "js/server.js" defer></script>
+        <script src = "js/home.js" defer></script>
         
     </head>
+
     <body>
         
     <div class="navbar">
@@ -29,7 +30,7 @@
         <a href="reports.html">Reports</a>
         <a href="about.html">About Us</a>
     </div>
-    
+
     <header>
         <a href=home.html>
         <img src="images/EWB logo.jfif" id="logo">
@@ -40,18 +41,22 @@
     
     <br>
 
-    
+
     <div class="tab">
         <button class="tabpages" onclick="openTab(event, 'guest')" id="defaultOpen"><b> Guest </b> </button>
         
         <button class="tabpages" onclick="openTab(event, 'admin')"> <b>Admin</b> </button>
     </div>
+
     <div id="guest" class="tabcontent">
         <h3>Guest Login</h3>
         <p>Phone number:</p>
         <input type="text" id="phoneNumber">
+        <a href = "map.html">
         <button onclick="getNumber(document.getElementById('phoneNumber'))"> Continue </button>
+        </a>
     </div>
+
     <div id="admin" class="tabcontent">
         <h3>Admin Login</h3>
         <p>Username:</p>
@@ -59,14 +64,10 @@
         <p>Password:</p>
         <input type="text">
     </div>
-    <div class="map">
-        
-    </div>
-    
 
     </body>
 
     <footer>
-        <div class= "footer">Copyright ©2022<br/></div>
+        <div>Copyright ©2022<br/></div>
     </footer>
 </html>
