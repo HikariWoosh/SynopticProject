@@ -19,7 +19,7 @@ function openTab(evt, userType) {
     document.getElementById(userType).style.display = "block";
     evt.currentTarget.className += " active";
   }
-  //document.getElementById("defaultOpen").click();
+  document.getElementById("defaultOpen").click();
 
    //function getNumber is used to store the phone number that the user will input
 function getNumber(x){
