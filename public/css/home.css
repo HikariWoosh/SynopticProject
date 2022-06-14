@@ -12,7 +12,6 @@ body{
 /*-----------------Login tab ----------------*/
 
 .tab {
-margin-top: 20%;
 margin-left: auto;
 margin-right: auto;
 overflow: hidden;
@@ -20,7 +19,7 @@ background-color: #f1f1f1;
 width: max-content;
 }
 
-/* Style the buttons that are used to open the tab content */
+/* Styling the buttons that are used to open the tab content */
 .tab button {
 font-size: large;
 background-color: inherit;
@@ -50,7 +49,6 @@ margin:auto;
 font-size: large;
 display: none;
 padding: 6px 12px;
-
 border-top: none;
 width: 60%;
 height: 100%;
