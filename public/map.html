@@ -1,15 +1,13 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="css/home.css">
+    <script src = "js/home.js" defer></script>
     <meta charset="UTF-8">
     <title>Cape York location tracker</title>
     <script src="https://cdn.pubnub.com/sdk/javascript/pubnub.4.19.0.min.js"></script>
     <script src="js/app.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" />
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/home.css">
-    <script src = "js/home.js"></script>
   </head>
   <body>
     <div class="navbar">
@@ -29,10 +27,17 @@
       </div>
       <a href="reports.html">Reports</a>
       <a href="about.html">About Us</a>
-  </div>
+    </div>
     <div class="container">
-      <h1>Live Tracker</h1>
       <div id="map-canvas"></div>
+    </div>
+    <div class="text-container">
+      <div id="map-text">
+        <h2 id="map-heading">Location tracker and map</h2>
+        <p id="map-para">Our map utilises the Google Maps API to provide an in-depth view of the Cape York area. We have defined prohibted areas,
+          on the map depicted by red circles.
+        </p>
+      </div>
     </div>
     <div id="statusMsg"></div>
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCZLA8tJNYpj8i1tQV96gNi01Ab1ae9sPE&callback=initialize&library=spherical"></script>
