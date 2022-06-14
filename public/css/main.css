@@ -86,14 +86,16 @@ background-color: rgb(241, 235, 235);
   width: 1100px;
   height: 700px;
   position: absolute;
-  top: 50%;
+  top: 48%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
 #map-text {
   position: absolute;
-  top: 25%;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 #map-heading{
