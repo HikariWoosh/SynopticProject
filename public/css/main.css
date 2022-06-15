@@ -117,7 +117,7 @@ background-color: rgb(241, 235, 235);
   margin-top: 15px;
 }
 
-#statusMsg.error {
+#statusMsg.alert {
   color: #fff;
   background-color: #c21807;
   animation: statusMsg 3s ease forwards;

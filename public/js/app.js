@@ -90,10 +90,8 @@ setInterval(function() {
   pubnub.publish({channel:pnChannel, message:currentLocation()});
 }, 5000);
 
-//Draw circle
-
+//Function to draw circle, will be used to define prohibted areas on the map
 var antennasCircle;
-
 function markProhibited(){
     antennasCircle = new google.maps.Circle({
     strokeColor: "#FF0000",
@@ -110,25 +108,25 @@ function markProhibited(){
   });
   map.fitBounds(antennasCircle.getBounds());
 }
-
+//Run the function to mark circle on page load
 window.onload = function(){
   markProhibited();
 };
-
-function errorMsg() {
+//Function to produce error message
+function alertMsg() {
   let status = document.querySelector("#statusMsg");
-  status.classList.add("error");
+  status.classList.add("alert");
   status.innerHTML = "You have entered a prohibted area!";
 }
-
+//Function to check if the marker is within the circle (prohibted area)
 function checkInProhibted(){
   var distance = google.maps.geometry.spherical.computeDistanceBetween(antennasCircle.getCenter(), mark.getPosition());
   if(distance <= antennasCircle.getRadius()){
-    errorMsg();
+    //If inside, produce alert
+    alertMsg();
   }
 }
-
-
+//Run the check every 3 seconds
 window.setInterval(function () {
   checkInProhibted();
 }, 3000);
