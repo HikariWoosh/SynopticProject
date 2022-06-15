@@ -6,6 +6,9 @@
         <title>Cape York Location Tracker</title>
     </head>
     <body>
+        <header>
+			<h1>User report Submission</h1>
+		</header>
         <div class="navbar">
             <a href="home.html">Home</a>
             <a href="map.html">Map</a>
@@ -24,5 +27,18 @@
             <a href="reports.html">Reports</a>
             <a href="about.html">About Us</a>
         </div>
+		<form action="/action_page.php">	
+		    <p>
+			    <label for="Uname">Name:</label>
+			    <input type="text" id="Uname" required><br><br>
+			    <label for="Uage">Age:</label>
+			    <input type="number" id="Uage" min="1" max="150" required><br><br>
+			    <label for="Uemail">Email:</label>
+			    <input type="text" id="Uemail" required><br><br>
+			    <label for="Uqueries">Queries:</label>
+			    <textarea id="Uqueries" name="Queries" rows="4" cols="50"></textarea><br><br>
+		    </p>
+			    <button type="submit" name="submit" id="submit" alt="submit" value="Submit"> Submit </button>
+		</form>
     </body>
 </html>
